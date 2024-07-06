@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* || General setup */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    background-color: #a9a9a9;
+}
+
+body {
+    width: 70%;
+    min-width: 800px;
+    margin: 0 auto;
+    background-color: #a9a9a9;
+}
+
+/* || typography */
+
+h1,
+h2,
+h3 {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #2a2a2a;
+}
+
+p,
+input,
+li {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #2a2a2a;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 2px 2px 10px black;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+p,
+li {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/* || header layout */
+
+header {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.header-content h1 {
+    margin-right: 10px;
+}
+
+body>* {
+    background-color: red;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+main,
+header,
+nav,
+article,
+aside,
+footer,
+section {
+    background-color: rgba(0, 255, 0, 0.5);
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+header img {
+    display: block;
+    height: 60px;
+    padding-top: 20.15px;
+}
+
+nav {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+nav li {
+    text-align: center;
+}
+
+nav a,
+nav span {
+    display: block;
+    font-size: 2rem;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    padding: 0 15px;
+    white-space: nowrap;
+}
+
+/* || main layout */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.welcome-section,
+.photos-section {
+    flex: 1;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+.photos-section {
+    max-width: 50%;
+}
+
+.welcome-section {
+    max-width: 50%;
+}
+
+article,
+section {
+    flex: 4;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+}
+
+aside a {
+    display: block;
+    width: 45%;
+    margin: 5px;
+}
+
+aside img {
+    max-width: 100%;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+/* HK additions */
+
+.flex-container {
+    background-color: rgba(0, 255, 0, 0.5);
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.photo-group {
+    text-align: center;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
